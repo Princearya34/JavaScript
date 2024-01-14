@@ -5,5 +5,16 @@ const course ={
 }
 //course.courseInstructor
 
-const{courseInstructor}=course
-console.log(courseInstructor)
+const{courseInstructor: instructor}=course
+console.log(instructor)
+
+const navbar = ({company})=>{
+
+}
+navbar(company="Prince")
+{
+   " name":"Prince",
+    "coursename":"Master Fullstack",
+    "price":"free"
+
+}
