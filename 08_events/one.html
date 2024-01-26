@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="images" >
+            <li id="camera"><img height="200px" width="200px" src="https://images.pexels.com/photos/7490540/pexels-photo-7490540.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li id="man"> <img height="200px" width="200px" src="https://images.pexels.com/photos/11141026/pexels-photo-11141026.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li id="owl"><img height="200px" width="200px" src="https://images.pexels.com/photos/19898940/pexels-photo-19898940/free-photo-of-close-up-of-an-owl-perching-in-a-hollow.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li id="building"><img height="200px" width="200px" src="https://images.pexels.com/photos/19969235/pexels-photo-19969235/free-photo-of-a-view-of-a-city-street-with-tall-buildings.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <a id="google" href="https://www.google.com/">google</a>      
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('images').addEventListener('click',function(){
+    //     alert("clicked inside the ul")
+    // })
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("owl clicked")
+    // })
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     alert("google clicked");
+    // })
+    document.querySelector('#images').addEventListener('click',function(e){
+        //console.log(e.target.parentNode);
+        let re=e.target.parentNode
+        re.remove()
+    })
+</script>
+</html>
