@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    XML is usually used for descriptive purposes, but there are ways to display XML data. If you don't define a specific way for the XML to be rendered, the raw XML is displayed in the browser.
+
+    One way to style XML output is to specify CSS to apply to the document using the xml-stylesheet processing instruction.   
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/Princearya34'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+      if(xhr.readyState ===4){
+        const data = JSON.parse(this.responseText)
+    
+        console.log(data.followers);
+      }
+    }
+    xhr.send()
+</script>
+</html>
